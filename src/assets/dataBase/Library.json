@@ -1,0 +1,246 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81eB+7+CkUL.jpg",
+      "titulo": "To Kill a Mockingbird",
+      "autor": "Harper Lee",
+      "categoria": "ficción",
+      "anio_publicacion": "1960"
+    },
+    {
+      "id": "2",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81FstQ+Z9FL.jpg",
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "categoria": "ficción",
+      "anio_publicacion": "1949"
+    },
+    {
+      "id": "3",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81z7-p5jW0L.jpg",
+      "titulo": "The Great Gatsby",
+      "autor": "F. Scott Fitzgerald",
+      "categoria": "ficción",
+      "anio_publicacion": "1925"
+    },
+    {
+      "id": "4",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91+S9e8hmvL.jpg",
+      "titulo": "The Catcher in the Rye",
+      "autor": "J.D. Salinger",
+      "categoria": "ficción",
+      "anio_publicacion": "1951"
+    },
+    {
+      "id": "5",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71UwSHSZRnS.jpg",
+      "titulo": "The Alchemist",
+      "autor": "Paulo Coelho",
+      "categoria": "ficción",
+      "anio_publicacion": "1988"
+    },
+    {
+      "id": "6",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/41RYzlgdI2L.jpg",
+      "titulo": "Sapiens: A Brief History of Humankind",
+      "autor": "Yuval Noah Harari",
+      "categoria": "no ficción",
+      "anio_publicacion": "2011"
+    },
+    {
+      "id": "7",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81OAYo6iBeL.jpg",
+      "titulo": "Educated",
+      "autor": "Tara Westover",
+      "categoria": "no ficción",
+      "anio_publicacion": "2018"
+    },
+    {
+      "id": "8",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91mZ0JtM5hL.jpg",
+      "titulo": "Becoming",
+      "autor": "Michelle Obama",
+      "categoria": "no ficción",
+      "anio_publicacion": "2018"
+    },
+    {
+      "id": "9",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81bJNokZ2tL.jpg",
+      "titulo": "Unbroken",
+      "autor": "Laura Hillenbrand",
+      "categoria": "no ficción",
+      "anio_publicacion": "2010"
+    },
+    {
+      "id": "10",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71xfk-Qi7IL.jpg",
+      "titulo": "The Immortal Life of Henrietta Lacks",
+      "autor": "Rebecca Skloot",
+      "categoria": "no ficción",
+      "anio_publicacion": "2010"
+    },
+    {
+      "id": "11",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg",
+      "titulo": "A Brief History of Time",
+      "autor": "Stephen Hawking",
+      "categoria": "ciencia y tecnología",
+      "anio_publicacion": "1988"
+    },
+    {
+      "id": "12",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91cmDFyzluL.jpg",
+      "titulo": "The Selfish Gene",
+      "autor": "Richard Dawkins",
+      "categoria": "ciencia y tecnología",
+      "anio_publicacion": "1976"
+    },
+    {
+      "id": "13",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81oKxa1Tz1L.jpg",
+      "titulo": "Astrophysics for People in a Hurry",
+      "autor": "Neil deGrasse Tyson",
+      "categoria": "ciencia y tecnología",
+      "anio_publicacion": "2017"
+    },
+    {
+      "id": "14",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91Pd4DPxH8L.jpg",
+      "titulo": "The Innovators",
+      "autor": "Walter Isaacson",
+      "categoria": "ciencia y tecnología",
+      "anio_publicacion": "2014"
+    },
+    {
+      "id": "15",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81t2CVWEsUL.jpg",
+      "titulo": "The Gene: An Intimate History",
+      "autor": "Siddhartha Mukherjee",
+      "categoria": "ciencia y tecnología",
+      "anio_publicacion": "2016"
+    },
+    {
+      "id": "16",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81AFokfMijL.jpg",
+      "titulo": "Pride and Prejudice",
+      "autor": "Jane Austen",
+      "categoria": "literatura",
+      "anio_publicacion": "1813"
+    },
+    {
+      "id": "17",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71aG+xDKSYL.jpg",
+      "titulo": "Moby Dick",
+      "autor": "Herman Melville",
+      "categoria": "literatura",
+      "anio_publicacion": "1851"
+    },
+    {
+      "id": "18",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91TduZt1KQL.jpg",
+      "titulo": "War and Peace",
+      "autor": "Leo Tolstoy",
+      "categoria": "literatura",
+      "anio_publicacion": "1869"
+    },
+    {
+      "id": "19",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91BzKliN9bL.jpg",
+      "titulo": "The Odyssey",
+      "autor": "Homer",
+      "categoria": "literatura",
+      "anio_publicacion": "700 a.C."
+    },
+    {
+      "id": "20",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71e0cDnDFnL.jpg",
+      "titulo": "Don Quixote",
+      "autor": "Miguel de Cervantes",
+      "categoria": "literatura",
+      "anio_publicacion": "1605"
+    },
+    {
+      "id": "21",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71f5mIHpz9L.jpg",
+      "titulo": "The Picture of Dorian Gray",
+      "autor": "Oscar Wilde",
+      "categoria": "literatura",
+      "anio_publicacion": "1890"
+    },
+    {
+      "id": "22",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81FhHcpsJZL.jpg",
+      "titulo": "Brave New World",
+      "autor": "Aldous Huxley",
+      "categoria": "ficción",
+      "anio_publicacion": "1932"
+    },
+    {
+      "id": "23",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81mJ5AnGxeL.jpg",
+      "titulo": "Fahrenheit 451",
+      "autor": "Ray Bradbury",
+      "categoria": "ficción",
+      "anio_publicacion": "1953"
+    },
+    {
+      "id": "24",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91ccpV6Qz1L.jpg",
+      "titulo": "The Hitchhiker's Guide to the Galaxy",
+      "autor": "Douglas Adams",
+      "categoria": "ficción",
+      "anio_publicacion": "1979"
+    },
+    {
+      "id": "25",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91WrpJ9AcVL.jpg",
+      "titulo": "A Wrinkle in Time",
+      "autor": "Madeleine L'Engle",
+      "categoria": "ficción",
+      "anio_publicacion": "1962"
+    },
+    {
+      "id": "26",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/71n0w0RmF7L.jpg",
+      "titulo": "The Road",
+      "autor": "Cormac McCarthy",
+      "categoria": "ficción",
+      "anio_publicacion": "2006"
+    },
+    {
+      "id": "27",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91IHvjjr-pL.jpg",
+      "titulo": "The Shining",
+      "autor": "Stephen King",
+      "categoria": "terror",
+      "anio_publicacion": "1977"
+    },
+    {
+      "id": "28",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91A7MSycb0L.jpg",
+      "titulo": "It",
+      "autor": "Stephen King",
+      "categoria": "terror",
+      "anio_publicacion": "1986"
+    },
+    {
+      "id": "29",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/91Ddcmq+TFL.jpg",
+      "titulo": "Carrie",
+      "autor": "Stephen King",
+      "categoria": "terror",
+      "anio_publicacion": "1974"
+    },
+    {
+      "id": "30",
+      "portada": "https://images-na.ssl-images-amazon.com/images/I/81l-jmPtvlL.jpg",
+      "titulo": "Dracula",
+      "autor": "Bram Stoker",
+      "categoria": "terror",
+      "anio_publicacion": "1897"
+    }
+  ]
+}
+
+  

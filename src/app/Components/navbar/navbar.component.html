@@ -1,0 +1,60 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <img src="assets/images/logo.png" alt="Biblioteca Nexus" class="logo" />
+    </div>
+
+    <div class="navbar-search" id="navbar-search" style="display: none;">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar por Titulo, Autor, Edición" />
+            <button class="search-icon">
+                <img src="assets/images/buscar.png" alt="Buscar" />
+            </button>
+        </div>
+    </div>
+
+    <div class="navbar-menu">
+        <a routerLink="/" routerLinkActive="active">
+            <button class="navbar-button">Inicio</button>
+        </a>
+        <a routerLink="/categoria" routerLinkActive="active">
+            <button class="navbar-button">Categorías</button>
+        </a>
+        <a routerLink="/contacto" routerLinkActive="active">
+            <button class="navbar-button">Contacto</button>
+        </a>
+
+        <!-- Cambiar el icono y las opciones del menú según el estado de login -->
+        <button class="icon-user" (click)="toggleUserMenu()">
+            <img [src]="'assets/images/' + userIcon" alt="{{userName}}" class="usuario" />
+        </button>
+    </div>
+</div>
+
+<!-- Panel de usuario -->
+<div *ngIf="showUserMenu" class="user-menu-panel">
+    <div class="login-register-options">
+        <!-- Mostrar opciones diferentes dependiendo del estado de login -->
+        <div class="login-option" *ngIf="!isLoggedIn">
+            <button class="navbar-button-user" (click)="openModal('login')">Iniciar sesión</button>
+        </div>
+        <div class="register-option" *ngIf="!isLoggedIn">
+            <button class="navbar-button-user" (click)="openModal('register')">Registrarse</button>
+        </div>
+        <div class="profile-option" *ngIf="isLoggedIn">
+            <button class="navbar-button-user" (click)="goToProfile()">Mis libros</button>
+        </div>
+        <div class="profile-option" *ngIf="isLoggedIn">
+            <button class="navbar-button-user" (click)="logout()">Cerrar sesión</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Login -->
+<div *ngIf="showLoginModal" class="modal">
+    <app-login (close)="closeModal('login')" (loginSuccess)="onLoginSuccess()"></app-login>
+</div>
+
+<!-- Modal de Registro -->
+<div *ngIf="showRegisterModal" class="modal">
+    <app-register (close)="closeModal('register')" (openLoginModal)="openLoginAfterRegister()"></app-register>
+</div>

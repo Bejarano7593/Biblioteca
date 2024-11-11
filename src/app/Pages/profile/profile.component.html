@@ -1,0 +1,45 @@
+<div class="profile-container">
+    <!-- Sección izquierda: Datos del usuario -->
+    <div class="user-info">
+        <h2>Mi Perfil</h2>
+        <p><strong>Usuario:</strong> {{ userData.user }}</p>
+        <p><strong>Nombre:</strong> {{ userData.name }} {{ userData.lastName }}</p>
+        <p><strong>Email:</strong> {{ userData.email }}</p>
+        <p><strong>Dirección:</strong> {{ userData.direction }}</p>
+        <p><strong>Teléfono:</strong> {{ userData.phone }}</p>
+    </div>
+
+    <!-- Sección derecha: Libros del usuario -->
+    <div class="books-section">
+        <h2>Mis Libros</h2>
+
+        <!-- Formulario para agregar o editar libros -->
+        <div class="add-book-form">
+            <input type="text" placeholder="Título" [(ngModel)]="newBook.title" />
+            <input type="text" placeholder="Autor" [(ngModel)]="newBook.author" />
+            <input type="number" placeholder="Año" [(ngModel)]="newBook.year" />
+            <button (click)="isEditing ? updateBook() : addBook()">
+                {{ isEditing ? 'Actualizar Libro' : 'Agregar Libro' }}
+            </button>
+        </div>
+
+        <!-- Tabla para listar los libros -->
+        <table class="books-table">
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Acciones</th>
+            </tr>
+            <tr *ngFor="let book of books; let i = index">
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.year }}</td>
+                <td>
+                    <button (click)="editBook(i)">Editar</button>
+                    <button (click)="deleteBook(i)">Eliminar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,281 @@
+#categories-container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    padding: 20px;
+}
+
+#categories-content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.left-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+.search-input {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-icon {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.categories-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.categories-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: #f0f8ff;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-checkbox {
+    margin-right: 10px;
+}
+
+.right-section {
+    width: 90%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.books-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    width: 250px;
+    height: 480px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-card img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.book-card p {
+    font-size: 15px;
+    margin: 0;
+    text-align: start;
+    width: 80%;
+}
+
+.book-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.book-author,
+.book-category,
+.book-anio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.request-button {
+    background-color: #37B5FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: auto;
+    width: 100%;
+}
+
+.request-button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+.request-button:focus {
+    outline: none;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.book-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .modal-header {
+    text-align: center;
+  }
+  
+  .modal-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .left-modal {
+    width: 40%;
+  }
+  
+  .left-modal img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .right-modal {
+    width: 55%;
+    padding-left: 20px;
+  }
+  
+  .right-modal h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .right-modal p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .request-button {
+    background-color: #37B5FF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .request-button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  

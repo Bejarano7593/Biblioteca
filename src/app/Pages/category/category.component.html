@@ -1,0 +1,70 @@
+<div id="categories-container">
+    <div id="categories-content">
+        <!-- Categorias -->
+        <div class="left-section">
+            <div class="search-box">
+                <!-- Input de búsqueda -->
+                <input type="text" class="search-input" placeholder="Buscar por título, autor o año"
+                    [(ngModel)]="searchTerm" />
+                <button class="search-icon" (click)="onSearch()">
+                    <img src="assets/images/buscar.png" alt="Buscar" />
+                </button>
+            </div>
+
+            <!-- Lista de categorías con checkboxes -->
+            <div class="categories-card">
+                <div class="categories-title">Categorías</div>
+
+                <div *ngFor="let category of ['Ficción', 'No Ficción', 'Ciencia y Tecnología', 'Literatura', 'Autoayuda', 'Arte y Cultura', 'Religión', 'Gástronomia', 'Misterio y Terror']"
+                    class="category-item">
+                    <input type="checkbox" class="category-checkbox" (change)="onCategoryChange()"
+                        [checked]="selectedCategories.includes(category)" (click)="toggleCategory(category)" />
+                    <span>{{ category }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="books-title">Libros Disponibles</div>
+            <div class="books-grid">
+                <div *ngFor="let book of filteredBooks" class="book-card">
+                    <img *ngIf="book.portada" [src]="book.portada" alt="{{ book.titulo }} portada" />
+                    <h3>{{ book.titulo }}</h3>
+                    <p>Autor: {{ book.autor.split(',')[0] }}</p>
+                    <p class="book-category">Categoría: {{ book.categoria.split(',')[0] }}</p>
+                    <p>Año de publicación: {{ book.anio_publicacion }}</p>
+                    <button class="request-button" (click)="openBookDetail(book)">Detalle de Libro</button>
+                </div>
+            </div>
+            <div *ngIf="loading" class="loading-spinner">
+                <img src="assets/images/loading.gif" alt="Cargando..." />
+            </div>
+        </div>
+
+        <!-- Modal de Detalles del Libro -->
+        <div class="book-modal" *ngIf="selectedBook">
+            <div class="modal-content">
+                <span class="close-modal" (click)="closeModal()">×</span>
+                <div class="modal-header">
+                    <h2>Detalles del Libro</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info">
+                        <div class="left-modal">
+                            <img *ngIf="selectedBook.portada" [src]="selectedBook.portada"
+                                alt="{{ selectedBook.titulo }} portada" />
+                        </div>
+                        <div class="right-modal">
+                            <h3>{{ selectedBook.titulo }}</h3>
+                            <p class="description">{{ selectedBook.descripcion || 'Descripción no disponible' }}</p>
+                            <p><strong>Autor:</strong> {{ selectedBook.autor.split(',')[0] }}</p>
+                            <p><strong>Categoría:</strong> {{ selectedBook.categoria.split(',')[0] }}</p>
+                            <p><strong>Año de publicación:</strong> {{ selectedBook.anio_publicacion }}</p>
+                            <button class="request-button">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

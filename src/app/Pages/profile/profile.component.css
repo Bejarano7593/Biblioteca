@@ -1,0 +1,103 @@
+.profile-container {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+}
+
+.user-info {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.books-section {
+  width: 65%;
+}
+
+.add-book-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-book-form input[type="text"],
+.add-book-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.add-book-form input[type="text"]:focus,
+.add-book-form input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-book-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-book-form button:hover {
+  background-color: #0056b3;
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.books-table th,
+.books-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.books-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.books-table td {
+  background-color: #fafafa;
+}
+
+.books-table tr:hover td {
+  background-color: #e9f7ff;
+}
+
+.books-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.books-table button:hover {
+  opacity: 0.8;
+}
+
+.books-table button:first-child {
+  background-color: #28a745;
+  margin-right: 5px;
+}
+
+.books-table button:last-child {
+  background-color: #dc3545;
+}
